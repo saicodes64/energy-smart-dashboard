@@ -72,7 +72,7 @@ const EnergyChatbot = () => {
                   </div>
                 )}
                 <div className={`max-w-[75%] rounded-xl px-3 py-2 text-sm ${m.role === 'user' ? 'energy-gradient text-primary-foreground' : 'bg-secondary text-foreground'}`}>
-                  <ReactMarkdown className="prose prose-sm prose-invert max-w-none [&>p]:m-0 [&>ul]:m-0 [&>ul]:pl-4">{m.content}</ReactMarkdown>
+                  <div className="prose prose-sm prose-invert max-w-none [&>p]:m-0 [&>ul]:m-0 [&>ul]:pl-4"><ReactMarkdown>{m.content}</ReactMarkdown></div>
                 </div>
                 {m.role === 'user' && (
                   <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-muted">
