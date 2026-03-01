@@ -1,4 +1,5 @@
 import { Zap, BarChart3, Home, Factory } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import UsageChart from '@/components/UsageChart';
 import PeakSummary from '@/components/PeakSummary';
 import CostCard from '@/components/CostCard';
