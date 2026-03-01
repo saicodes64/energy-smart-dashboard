@@ -25,13 +25,11 @@ const Index = () => {
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <div className="hidden sm:flex items-center gap-2 rounded-full border border-border bg-secondary/50 px-3 py-1.5">
-              <Home className="h-3.5 w-3.5 text-primary" />
-              <span className="text-xs text-muted-foreground">Home</span>
-              <span className="text-muted-foreground">/</span>
-              <Factory className="h-3.5 w-3.5 text-muted-foreground" />
-              <span className="text-xs text-muted-foreground">Industrial</span>
-            </div>
+            <nav className="hidden sm:flex items-center gap-1">
+              <Link to="/" className="px-3 py-1.5 text-sm text-primary font-medium rounded-lg bg-primary/10">Dashboard</Link>
+              <Link to="/about" className="px-3 py-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors rounded-lg hover:bg-secondary/50">About</Link>
+              <Link to="/contact" className="px-3 py-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors rounded-lg hover:bg-secondary/50">Contact</Link>
+            </nav>
             <div className="flex items-center gap-1.5 rounded-full bg-savings/10 border border-savings/20 px-3 py-1.5">
               <span className="h-2 w-2 rounded-full bg-savings animate-pulse-glow" />
               <span className="text-xs font-medium text-savings">Live</span>
